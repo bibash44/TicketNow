@@ -16,64 +16,102 @@
         android:layout_height="180dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:src="@drawable/logo"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/txt_fullname"
-        style="@style/sign_up_form_text_boxes"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_field_fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sign_up_logo"
-        android:drawableStart="@drawable/name"
-        android:hint="Full name *" />
+        android:layout_below="@id/sign_up_logo">
 
-    <EditText
-        android:id="@+id/txt_email"
-        style="@style/sign_up_form_text_boxes"
+        <EditText
+            android:id="@+id/txt_fullname"
+            style="@style/sign_up_login_form_text_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/name"
+            android:hint="Full name *" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_fullname"
-        android:drawableStart="@drawable/email"
-        android:hint="Email *" />
+        android:layout_below="@id/input_text_field_fullname">
 
-    <EditText
-        android:id="@+id/txt_phone"
-        style="@style/sign_up_form_text_boxes"
+        <EditText
+            android:id="@+id/txt_email"
+            style="@style/sign_up_login_form_text_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/email"
+            android:hint="Email *" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_email"
-        android:drawableStart="@drawable/phone"
-        android:hint="Phone *" />
+        android:layout_below="@id/input_text_email">
 
-    <EditText
-        android:id="@+id/txt_password"
-        style="@style/sign_up_form_text_boxes"
+        <EditText
+            android:id="@+id/txt_phone"
+            style="@style/sign_up_login_form_text_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:hint="Phone *" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_phone"
-        android:drawableStart="@drawable/lock"
-        android:hint="Password *" />
+        android:layout_below="@id/input_text_phone">
 
-    <EditText
-        android:id="@+id/txt_c_password"
-        style="@style/sign_up_form_text_boxes"
+        <EditText
+            android:id="@+id/txt_password"
+            style="@style/sign_up_login_form_text_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock"
+            android:hint="Password *" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_cpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_password"
-        android:drawableStart="@drawable/lock"
-        android:hint="Confirm Password *" />
+        android:layout_below="@id/input_text_password">
+
+        <EditText
+            android:id="@+id/txt_cpassword"
+            style="@style/sign_up_login_form_text_boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock"
+            android:hint="Confirm Password *" />
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/btn_sign_up"
         style="@style/sign_up_login_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_c_password"
+        android:layout_below="@+id/input_text_cpassword"
         android:text="Sign up" />
-
-
-
 
 
     <TextView
@@ -85,7 +123,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Already a member, click here to login"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary" />-->
 
 
 </RelativeLayout>
