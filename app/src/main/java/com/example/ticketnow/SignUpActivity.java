@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
@@ -15,8 +16,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         login_link=findViewById(R.id.link_to_login);
         login_link.setOnClickListener(this);
-
-
     }
 
     @Override
