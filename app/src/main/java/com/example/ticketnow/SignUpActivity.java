@@ -89,7 +89,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 txt_phone.requestFocus();
             }
 
-            else if (!phone.isEmpty() && !phone.matches("[+ 0-9].{7,10}")) {
+            else if (!phone.isEmpty() && !phone.matches("[+ 0-9].{6,10}")) {
                 txt_phone.setError("Phone number can include + and must be minimum character up to 7 and maximum up to 10 character only");
                 txt_phone.requestFocus();
             }
@@ -109,7 +109,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
 
             else if (cpassword.isEmpty()) {
-                txt_cpassword.setError("Please re-enter your password");
+                    txt_cpassword.setError("Please re-enter your password");
                 txt_cpassword.requestFocus();
             }
 

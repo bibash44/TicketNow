@@ -52,7 +52,8 @@
                 android:id="@+id/input_text_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/login_logo">
+                android:layout_below="@id/login_logo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">>
 
                 <EditText
                     android:id="@+id/txt_email"
@@ -70,7 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/input_text_email"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <EditText
                     android:id="@+id/txt_password"
